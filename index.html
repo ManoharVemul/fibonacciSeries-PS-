@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+<pre>
+    <h1> Practice work:
+
+
+1) Write a program to print even numbers in the given range 1, input num)
+
+input: Enter a number: 10
+Qutput: 24 6 8 10
+
+
+2) Write a program to print sum of odd numbers in the fibonnaci series
+
+input: Enter no of series : 5 (0 1 1 2 3)
+output: 5
+
+3) Write a program to print sum of odd numbers in the fibonnaci series and number should be added only once
+
+input: Enter no of series : 5
+output: 4
+
+4) Write a program to print the below series based on input
+Enter a number: -10 (should not use <= operator)
+output: -10 -9 -8 - 7 -6 - 5 - 4,,, -1
+output: -1-2-3 ,,, -10 (should not use >= operator)
+
+    </h1>
+
+</pre>
+
+
+    <script>
+
+let num = +prompt("enter the number  : ")
+let str ="";
+for (i = 1; 2*i<=num; i++){
+str = str+2*i+" "
+}
+
+  console.log(str);
+//**********************************************
+let num1 = +prompt("enter the number  : ");
+let a = 0; b= 1;strt = "";sum=0;
+for (i=1;i<=num1;i++){
+    c=a+b;
+    a=b;
+    b=c;
+ // console.log(a) 
+
+if(a%2==1){
+  
+  strt =strt +a+" ";
+  sum = sum +Number(a)
+}
+}
+console.log(`the even numbers in fibonacci series is  ${strt}`) 
+
+console.log(`the sum of even numbers in fibonacci series is  ${sum}`) 
+//*********************************************************
+
+  let  str2 ="";
+  let n = +prompt("enter the number  : ")
+  for (i=n;i!=0;i++){
+     str2 = str2+i+" "
+  }
+  console.log(str2); 
+
+//**********************************************
+
+let  str3 ="";
+  let nn = +prompt("enter the number  : ")
+  for (i=-1;i!=(nn-1);i--){
+     str3 = str3+i+" "
+  }
+  console.log(str3); 
+
+
+//************************************************
+
+    </script>
+</body>
+</html>
